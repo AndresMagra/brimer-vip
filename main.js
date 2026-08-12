@@ -7,6 +7,17 @@ const CONFIG = {
   },
 };
 
+// ---- Fleet photo galleries ----
+const galleries = {
+  sprinter: [
+    "assets/images/sprinter-exterior-1.jpeg",
+    "assets/images/sprinter-exterior-2.jpeg",
+    "assets/images/sprinter-interior-1.jpeg",
+    "assets/images/sprinter-interior-2.jpeg",
+    "assets/images/sprinter-interior-3.jpeg",
+  ],
+};
+
 // ---- i18n dictionary ----
 const translations = {
   es: {
@@ -37,6 +48,9 @@ const translations = {
     "fleet.title": "Nuestra Flota",
     "fleet.subtitle": "Vehículos modernos, cómodos y bien mantenidos.",
     "fleet.placeholder": "Foto próximamente",
+    "fleet.viewPhotos": "Ver fotos",
+    "fleet.sprinter": "Mercedes-Benz Sprinter",
+    "fleet.sprinterDesc": "Minibús de lujo, 16 pasajeros, ideal para grupos y traslados a eventos.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -85,6 +99,9 @@ const translations = {
     "fleet.title": "Our Fleet",
     "fleet.subtitle": "Modern, comfortable, and well-maintained vehicles.",
     "fleet.placeholder": "Photo coming soon",
+    "fleet.viewPhotos": "View photos",
+    "fleet.sprinter": "Mercedes-Benz Sprinter",
+    "fleet.sprinterDesc": "Luxury minibus, 16 passengers, ideal for groups and event transfers.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
@@ -149,4 +166,53 @@ document.addEventListener("DOMContentLoaded", () => {
   mainNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => mainNav.classList.remove("open"));
   });
+
+  initLightbox();
 });
+
+// ---- Lightbox gallery ----
+function initLightbox() {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+  const closeBtn = document.getElementById("lightboxClose");
+  const prevBtn = document.getElementById("lightboxPrev");
+  const nextBtn = document.getElementById("lightboxNext");
+
+  let currentGallery = [];
+  let currentIndex = 0;
+
+  function show(index) {
+    currentIndex = (index + currentGallery.length) % currentGallery.length;
+    lightboxImg.src = currentGallery[currentIndex];
+  }
+
+  function open(galleryKey, startIndex) {
+    currentGallery = galleries[galleryKey];
+    if (!currentGallery) return;
+    show(startIndex || 0);
+    lightbox.classList.add("open");
+  }
+
+  function close() {
+    lightbox.classList.remove("open");
+  }
+
+  document.querySelectorAll("[data-gallery]").forEach((card) => {
+    card.addEventListener("click", () => open(card.getAttribute("data-gallery"), 0));
+  });
+
+  closeBtn.addEventListener("click", close);
+  prevBtn.addEventListener("click", () => show(currentIndex - 1));
+  nextBtn.addEventListener("click", () => show(currentIndex + 1));
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) close();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (!lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") close();
+    if (e.key === "ArrowLeft") show(currentIndex - 1);
+    if (e.key === "ArrowRight") show(currentIndex + 1);
+  });
+}

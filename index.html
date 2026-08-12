@@ -100,6 +100,14 @@
     <h2 class="section-title" data-i18n="fleet.title">Nuestra Flota</h2>
     <p class="section-sub" data-i18n="fleet.subtitle">Vehículos modernos, cómodos y bien mantenidos.</p>
     <div class="grid fleet-grid">
+      <div class="fleet-card" data-gallery="sprinter">
+        <div class="fleet-img">
+          <img src="assets/images/sprinter-exterior-1.jpeg" alt="Mercedes-Benz Sprinter">
+          <span class="fleet-img-hint" data-i18n="fleet.viewPhotos">Ver fotos</span>
+        </div>
+        <h3 data-i18n="fleet.sprinter">Mercedes-Benz Sprinter</h3>
+        <p class="fleet-desc" data-i18n="fleet.sprinterDesc">Minibús de lujo, 16 pasajeros, ideal para grupos y traslados a eventos.</p>
+      </div>
       <div class="fleet-card">
         <div class="fleet-img placeholder-img"><span data-i18n="fleet.placeholder">Foto próximamente</span></div>
         <h3 data-i18n="fleet.suv">SUV de Lujo</h3>
@@ -110,15 +118,18 @@
       </div>
       <div class="fleet-card">
         <div class="fleet-img placeholder-img"><span data-i18n="fleet.placeholder">Foto próximamente</span></div>
-        <h3 data-i18n="fleet.van">Van / Minibús</h3>
-      </div>
-      <div class="fleet-card">
-        <div class="fleet-img placeholder-img"><span data-i18n="fleet.placeholder">Foto próximamente</span></div>
         <h3 data-i18n="fleet.bus">Autobús</h3>
       </div>
     </div>
   </div>
 </section>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">&#10095;</button>
+</div>
 
 <section class="areas" id="areas">
   <div class="container">

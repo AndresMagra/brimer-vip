@@ -272,7 +272,36 @@ section { padding: 80px 0; }
 .fleet-img {
   aspect-ratio: 4 / 3;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
+
+.fleet-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.fleet-card[data-gallery] { cursor: pointer; }
+
+.fleet-card[data-gallery]:hover .fleet-img img {
+  transform: scale(1.05);
+}
+
+.fleet-img-hint {
+  position: absolute;
+  inset: auto 0 0 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.75), transparent);
+  color: var(--gold);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 24px 14px 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.fleet-card[data-gallery]:hover .fleet-img-hint { opacity: 1; }
 
 .placeholder-img {
   display: flex;
@@ -286,9 +315,73 @@ section { padding: 80px 0; }
 }
 
 .fleet-card h3 {
-  padding: 16px;
+  padding: 16px 16px 4px;
   font-size: 1rem;
   color: #fff;
+}
+
+.fleet-desc {
+  padding: 0 16px 18px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: rgba(5, 5, 5, 0.94);
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox-img {
+  max-width: 88vw;
+  max-height: 82vh;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--border);
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.lightbox-nav:hover { background: rgba(229, 177, 58, 0.25); }
+
+.lightbox-prev { left: 18px; }
+.lightbox-next { right: 18px; }
+
+@media (max-width: 480px) {
+  .lightbox-nav { width: 38px; height: 38px; font-size: 0.95rem; }
 }
 
 /* Areas */
