@@ -30,6 +30,10 @@ const galleries = {
     "assets/images/sprinter-interior-2.jpeg",
     "assets/images/sprinter-interior-3.jpeg",
   ],
+  sprinterBlack: [
+    "assets/images/sprinter-black-side.jpeg",
+    "assets/images/sprinter-black-front.jpeg",
+  ],
   picanto: [
     "assets/images/picanto-front.jpeg",
     "assets/images/picanto-rear.jpeg",
@@ -119,6 +123,8 @@ const translations = {
     "fleet.suburbanLtzDesc": "SUV grande y elegante, amplia capacidad de pasajeros y equipaje.",
     "fleet.sprinter": "Mercedes-Benz Sprinter",
     "fleet.sprinterDesc": "Minibús de lujo, 16 pasajeros, ideal para grupos y traslados a eventos.",
+    "fleet.sprinterBlack": "Mercedes-Benz Sprinter",
+    "fleet.sprinterBlackDesc": "Minibús de lujo en negro, elegante y espacioso para grupos y eventos.",
     "fleet.picanto": "Kia Picanto",
     "fleet.picantoDesc": "Vehículo compacto, económico y ágil, ideal para moverse por la ciudad.",
     "fleet.traverse": "Chevrolet Traverse",
@@ -194,6 +200,8 @@ const translations = {
     "fleet.suburbanLtzDesc": "Large, elegant SUV with generous passenger and luggage capacity.",
     "fleet.sprinter": "Mercedes-Benz Sprinter",
     "fleet.sprinterDesc": "Luxury minibus, 16 passengers, ideal for groups and event transfers.",
+    "fleet.sprinterBlack": "Mercedes-Benz Sprinter",
+    "fleet.sprinterBlackDesc": "Luxury minibus in black, elegant and spacious for groups and events.",
     "fleet.picanto": "Kia Picanto",
     "fleet.picantoDesc": "Compact, economical, and nimble — ideal for getting around town.",
     "fleet.traverse": "Chevrolet Traverse",
