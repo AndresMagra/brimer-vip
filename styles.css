@@ -126,13 +126,13 @@ a { color: inherit; text-decoration: none; }
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s;
 }
 
-.btn:hover { transform: translateY(-2px); }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35); }
 
 .btn-whatsapp {
   background: var(--whatsapp);
   color: #04220f;
 }
-.btn-whatsapp:hover { background: var(--whatsapp-dark); }
+.btn-whatsapp:hover { background: var(--whatsapp-dark); box-shadow: 0 10px 28px rgba(37, 211, 102, 0.3); }
 
 .btn-small { padding: 8px 16px; font-size: 0.85rem; }
 .btn-large { padding: 16px 32px; font-size: 1.05rem; }
@@ -170,6 +170,8 @@ a { color: inherit; text-decoration: none; }
   height: 110px;
   width: auto;
   margin-bottom: 28px;
+  border-radius: 12px;
+  filter: drop-shadow(0 0 28px rgba(229, 177, 58, 0.28));
 }
 
 .hero h1 {
@@ -206,6 +208,20 @@ section { padding: 80px 0; }
   font-weight: 800;
   text-align: center;
   color: #fff;
+  position: relative;
+  padding-bottom: 18px;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 56px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--gold-dark), var(--gold));
 }
 
 .section-sub {
@@ -247,12 +263,13 @@ section { padding: 80px 0; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 30px 26px;
-  transition: border-color 0.2s, transform 0.2s;
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
   border-color: var(--gold-dark);
   transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
 .card-icon {
@@ -281,6 +298,13 @@ section { padding: 80px 0; }
   overflow: hidden;
   border: 1px solid var(--border);
   background: var(--surface);
+  transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+}
+
+.fleet-card[data-gallery]:hover {
+  border-color: var(--gold-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.35);
 }
 
 .fleet-img {
@@ -411,6 +435,12 @@ section { padding: 80px 0; }
   color: var(--gold);
   font-weight: 700;
   background: rgba(229, 177, 58, 0.06);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.area-pill:hover {
+  background: rgba(229, 177, 58, 0.12);
+  transform: translateY(-2px);
 }
 
 /* About */
@@ -452,12 +482,16 @@ section { padding: 80px 0; }
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  border: 2px solid var(--gold);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
   z-index: 90;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.whatsapp-float:hover { transform: scale(1.08); }
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 28px rgba(229, 177, 58, 0.35);
+}
 
 /* Footer */
 .site-footer {
