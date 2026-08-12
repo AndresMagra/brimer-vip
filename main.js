@@ -46,6 +46,11 @@ const galleries = {
     "assets/images/h1-front.jpeg",
     "assets/images/h1-side.jpeg",
   ],
+  hiace: [
+    "assets/images/hiace-side-1.jpeg",
+    "assets/images/hiace-front.jpeg",
+    "assets/images/hiace-side-2.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -93,6 +98,8 @@ const translations = {
     "fleet.xl7Desc": "Crossover de 7 pasajeros, elegante y con excelente confort de viaje.",
     "fleet.h1": "Hyundai H1",
     "fleet.h1Desc": "Van de pasajeros, cómoda y espaciosa, ideal para grupos pequeños y familias.",
+    "fleet.hiace": "Toyota HiAce",
+    "fleet.hiaceDesc": "Van de pasajeros de alta capacidad, ideal para grupos y traslados grupales.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -156,6 +163,8 @@ const translations = {
     "fleet.xl7Desc": "7-passenger crossover, stylish with excellent ride comfort.",
     "fleet.h1": "Hyundai H1",
     "fleet.h1Desc": "Passenger van, comfortable and spacious, ideal for small groups and families.",
+    "fleet.hiace": "Toyota HiAce",
+    "fleet.hiaceDesc": "High-capacity passenger van, ideal for groups and group transfers.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
