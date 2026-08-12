@@ -9,6 +9,13 @@ const CONFIG = {
 
 // ---- Fleet photo galleries ----
 const galleries = {
+  suburban: [
+    "assets/images/suburban-side-2.jpeg",
+    "assets/images/suburban-front.jpeg",
+    "assets/images/suburban-side-1.jpeg",
+    "assets/images/suburban-side-3.jpeg",
+    "assets/images/suburban-interior.jpeg",
+  ],
   sprinter: [
     "assets/images/sprinter-exterior-1.jpeg",
     "assets/images/sprinter-exterior-2.jpeg",
@@ -99,6 +106,8 @@ const translations = {
     "fleet.subtitle": "Vehículos modernos, cómodos y bien mantenidos.",
     "fleet.placeholder": "Foto próximamente",
     "fleet.viewPhotos": "Ver fotos",
+    "fleet.suburban": "Chevrolet Suburban High Country",
+    "fleet.suburbanDesc": "SUV insignia de lujo, máximo confort y tecnología para tus traslados VIP.",
     "fleet.sprinter": "Mercedes-Benz Sprinter",
     "fleet.sprinterDesc": "Minibús de lujo, 16 pasajeros, ideal para grupos y traslados a eventos.",
     "fleet.picanto": "Kia Picanto",
@@ -170,6 +179,8 @@ const translations = {
     "fleet.subtitle": "Modern, comfortable, and well-maintained vehicles.",
     "fleet.placeholder": "Photo coming soon",
     "fleet.viewPhotos": "View photos",
+    "fleet.suburban": "Chevrolet Suburban High Country",
+    "fleet.suburbanDesc": "Flagship luxury SUV — top comfort and technology for your VIP transfers.",
     "fleet.sprinter": "Mercedes-Benz Sprinter",
     "fleet.sprinterDesc": "Luxury minibus, 16 passengers, ideal for groups and event transfers.",
     "fleet.picanto": "Kia Picanto",
