@@ -37,6 +37,11 @@ const galleries = {
     "assets/images/traverse-white-side-2.jpeg",
     "assets/images/traverse-white-side-3.jpeg",
   ],
+  xl7: [
+    "assets/images/xl7-side.jpeg",
+    "assets/images/xl7-front-1.jpeg",
+    "assets/images/xl7-front-2.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -80,6 +85,8 @@ const translations = {
     "fleet.sonetDesc": "SUV compacta, versátil y con excelente relación espacio-comodidad.",
     "fleet.traverseWhite": "Chevrolet Traverse",
     "fleet.traverseWhiteDesc": "SUV espaciosa de 7 pasajeros, ideal para familias y grupos.",
+    "fleet.xl7": "Suzuki XL7",
+    "fleet.xl7Desc": "Crossover de 7 pasajeros, elegante y con excelente confort de viaje.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -139,6 +146,8 @@ const translations = {
     "fleet.sonetDesc": "Compact SUV, versatile with a great balance of space and comfort.",
     "fleet.traverseWhite": "Chevrolet Traverse",
     "fleet.traverseWhiteDesc": "Spacious 7-passenger SUV, great for families and groups.",
+    "fleet.xl7": "Suzuki XL7",
+    "fleet.xl7Desc": "7-passenger crossover, stylish with excellent ride comfort.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
