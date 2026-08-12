@@ -31,6 +31,12 @@ const galleries = {
     "assets/images/sonet-front-side-2.jpeg",
     "assets/images/sonet-rear-side.jpeg",
   ],
+  traverseWhite: [
+    "assets/images/traverse-white-front.jpeg",
+    "assets/images/traverse-white-side-1.jpeg",
+    "assets/images/traverse-white-side-2.jpeg",
+    "assets/images/traverse-white-side-3.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -72,6 +78,8 @@ const translations = {
     "fleet.traverseDesc": "SUV espaciosa de 7 pasajeros, cómoda y con amplio espacio de carga.",
     "fleet.sonet": "Kia Sonet",
     "fleet.sonetDesc": "SUV compacta, versátil y con excelente relación espacio-comodidad.",
+    "fleet.traverseWhite": "Chevrolet Traverse",
+    "fleet.traverseWhiteDesc": "SUV espaciosa de 7 pasajeros, ideal para familias y grupos.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -129,6 +137,8 @@ const translations = {
     "fleet.traverseDesc": "Spacious 7-passenger SUV with comfortable seating and ample cargo room.",
     "fleet.sonet": "Kia Sonet",
     "fleet.sonetDesc": "Compact SUV, versatile with a great balance of space and comfort.",
+    "fleet.traverseWhite": "Chevrolet Traverse",
+    "fleet.traverseWhiteDesc": "Spacious 7-passenger SUV, great for families and groups.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
