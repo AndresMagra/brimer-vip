@@ -42,6 +42,10 @@ const galleries = {
     "assets/images/xl7-front-1.jpeg",
     "assets/images/xl7-front-2.jpeg",
   ],
+  h1: [
+    "assets/images/h1-front.jpeg",
+    "assets/images/h1-side.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -87,6 +91,8 @@ const translations = {
     "fleet.traverseWhiteDesc": "SUV espaciosa de 7 pasajeros, ideal para familias y grupos.",
     "fleet.xl7": "Suzuki XL7",
     "fleet.xl7Desc": "Crossover de 7 pasajeros, elegante y con excelente confort de viaje.",
+    "fleet.h1": "Hyundai H1",
+    "fleet.h1Desc": "Van de pasajeros, cómoda y espaciosa, ideal para grupos pequeños y familias.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -148,6 +154,8 @@ const translations = {
     "fleet.traverseWhiteDesc": "Spacious 7-passenger SUV, great for families and groups.",
     "fleet.xl7": "Suzuki XL7",
     "fleet.xl7Desc": "7-passenger crossover, stylish with excellent ride comfort.",
+    "fleet.h1": "Hyundai H1",
+    "fleet.h1Desc": "Passenger van, comfortable and spacious, ideal for small groups and families.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
