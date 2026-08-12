@@ -56,6 +56,11 @@ const galleries = {
     "assets/images/golfcart-front.jpeg",
     "assets/images/golfcart-rear.jpeg",
   ],
+  golfcartWhite: [
+    "assets/images/golfcart-white-front.jpeg",
+    "assets/images/golfcart-white-rear.jpeg",
+    "assets/images/golfcart-white-rear-2.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -107,6 +112,8 @@ const translations = {
     "fleet.hiaceDesc": "Van de pasajeros de alta capacidad, ideal para grupos y traslados grupales.",
     "fleet.golfcart": "Buggy Tucan",
     "fleet.golfcartDesc": "Carrito todoterreno de lujo, ideal para excursiones y paseos en Casa de Campo.",
+    "fleet.golfcartWhite": "Buggy 6 Pasajeros",
+    "fleet.golfcartWhiteDesc": "Carrito todoterreno de 6 pasajeros, perfecto para grupos en Casa de Campo.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -174,6 +181,8 @@ const translations = {
     "fleet.hiaceDesc": "High-capacity passenger van, ideal for groups and group transfers.",
     "fleet.golfcart": "Tucan Buggy",
     "fleet.golfcartDesc": "Luxury off-road cart, perfect for excursions and rides around Casa de Campo.",
+    "fleet.golfcartWhite": "6-Passenger Buggy",
+    "fleet.golfcartWhiteDesc": "6-passenger off-road cart, perfect for groups around Casa de Campo.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
