@@ -61,6 +61,11 @@ const galleries = {
     "assets/images/golfcart-white-rear.jpeg",
     "assets/images/golfcart-white-rear-2.jpeg",
   ],
+  trax: [
+    "assets/images/trax-rear-side.jpeg",
+    "assets/images/trax-side-1.jpeg",
+    "assets/images/trax-side-2.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -114,6 +119,8 @@ const translations = {
     "fleet.golfcartDesc": "Carrito todoterreno de lujo, ideal para excursiones y paseos en Casa de Campo.",
     "fleet.golfcartWhite": "Buggy 6 Pasajeros",
     "fleet.golfcartWhiteDesc": "Carrito todoterreno de 6 pasajeros, perfecto para grupos en Casa de Campo.",
+    "fleet.trax": "Chevrolet Trax",
+    "fleet.traxDesc": "SUV compacta, ágil y eficiente, ideal para la ciudad y viajes cortos.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -183,6 +190,8 @@ const translations = {
     "fleet.golfcartDesc": "Luxury off-road cart, perfect for excursions and rides around Casa de Campo.",
     "fleet.golfcartWhite": "6-Passenger Buggy",
     "fleet.golfcartWhiteDesc": "6-passenger off-road cart, perfect for groups around Casa de Campo.",
+    "fleet.trax": "Chevrolet Trax",
+    "fleet.traxDesc": "Compact, agile, and efficient SUV, great for the city and short trips.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
