@@ -215,6 +215,20 @@ section { padding: 80px 0; }
   margin: 12px auto 0;
 }
 
+.fleet-category {
+  margin-top: 48px;
+  margin-bottom: -8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+.fleet-category:first-of-type { margin-top: 40px; }
+
 .grid {
   display: grid;
   gap: 24px;
