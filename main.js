@@ -21,6 +21,11 @@ const galleries = {
     "assets/images/picanto-rear.jpeg",
     "assets/images/picanto-rear-side.jpeg",
   ],
+  traverse: [
+    "assets/images/traverse-side.jpeg",
+    "assets/images/traverse-rear.jpeg",
+    "assets/images/traverse-rear-side.jpeg",
+  ],
 };
 
 // ---- i18n dictionary ----
@@ -58,6 +63,8 @@ const translations = {
     "fleet.sprinterDesc": "Minibús de lujo, 16 pasajeros, ideal para grupos y traslados a eventos.",
     "fleet.picanto": "Kia Picanto",
     "fleet.picantoDesc": "Vehículo compacto, económico y ágil, ideal para moverse por la ciudad.",
+    "fleet.traverse": "Chevrolet Traverse",
+    "fleet.traverseDesc": "SUV espaciosa de 7 pasajeros, cómoda y con amplio espacio de carga.",
     "fleet.suv": "SUV de Lujo",
     "fleet.sedan": "Sedán Ejecutivo",
     "fleet.van": "Van / Minibús",
@@ -111,6 +118,8 @@ const translations = {
     "fleet.sprinterDesc": "Luxury minibus, 16 passengers, ideal for groups and event transfers.",
     "fleet.picanto": "Kia Picanto",
     "fleet.picantoDesc": "Compact, economical, and nimble — ideal for getting around town.",
+    "fleet.traverse": "Chevrolet Traverse",
+    "fleet.traverseDesc": "Spacious 7-passenger SUV with comfortable seating and ample cargo room.",
     "fleet.suv": "Luxury SUV",
     "fleet.sedan": "Executive Sedan",
     "fleet.van": "Van / Minibus",
