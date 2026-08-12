@@ -1,6 +1,6 @@
 // ---- Config: update these with real business details ----
 const CONFIG = {
-  whatsappNumber: "18095550123", // TODO: replace with real WhatsApp number, digits only, country code first
+  whatsappNumber: "18499196203", // Brimer VIP WhatsApp
   whatsappMessage: {
     es: "Hola, me gustaría más información sobre sus servicios.",
     en: "Hi, I'd like more information about your services.",
