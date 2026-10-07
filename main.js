@@ -5,6 +5,11 @@ const CONFIG = {
     es: "Hola, me gustaría más información sobre sus servicios.",
     en: "Hi, I'd like more information about your services.",
   },
+  // {v} is replaced with the vehicle name
+  vehicleMessage: {
+    es: "Hola, me gustaría reservar el {v}. ¿Está disponible?",
+    en: "Hi, I'd like to reserve the {v}. Is it available?",
+  },
 };
 
 // ---- Fleet photo galleries ----
@@ -139,6 +144,7 @@ const translations = {
     "fleet.catBuggies": "Buggies Todoterreno",
     "fleet.placeholder": "Foto próximamente",
     "fleet.viewPhotos": "Ver fotos",
+    "fleet.reserve": "Reservar por WhatsApp",
     "fleet.suburban": "Chevrolet Suburban High Country",
     "fleet.suburbanDesc": "SUV insignia de lujo, máximo confort y tecnología para tus traslados VIP.",
     "fleet.suburbanLtz": "Chevrolet Suburban LTZ",
@@ -228,6 +234,7 @@ const translations = {
     "fleet.catBuggies": "Off-Road Buggies",
     "fleet.placeholder": "Photo coming soon",
     "fleet.viewPhotos": "View photos",
+    "fleet.reserve": "Reserve on WhatsApp",
     "fleet.suburban": "Chevrolet Suburban High Country",
     "fleet.suburbanDesc": "Flagship luxury SUV — top comfort and technology for your VIP transfers.",
     "fleet.suburbanLtz": "Chevrolet Suburban LTZ",
@@ -309,9 +316,28 @@ function updateWhatsappLinks() {
     const el = document.getElementById(id);
     if (el) el.href = url;
   });
+  const vehicleTpl = CONFIG.vehicleMessage[currentLang] || CONFIG.vehicleMessage.es;
+  document.querySelectorAll(".fleet-reserve").forEach((a) => {
+    const name = a.closest(".fleet-card").querySelector("h3").textContent.trim();
+    a.href = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(vehicleTpl.replace("{v}", name))}`;
+  });
+}
+
+function addReserveButtons() {
+  document.querySelectorAll(".fleet-card").forEach((card) => {
+    const a = document.createElement("a");
+    a.className = "btn btn-whatsapp btn-small fleet-reserve";
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.setAttribute("data-i18n", "fleet.reserve");
+    a.textContent = "Reservar por WhatsApp";
+    a.addEventListener("click", (e) => e.stopPropagation()); // don't open the lightbox
+    card.appendChild(a);
+  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  addReserveButtons();
   applyLanguage(currentLang);
 
   const langToggle = document.getElementById("langToggle");
