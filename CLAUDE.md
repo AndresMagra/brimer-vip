@@ -45,6 +45,14 @@ Every fleet card has a `data-gallery` id wired to a photo array in `main.js`
 (`galleries` object) and opens in a lightbox on click. License plates were blurred
 with PIL wherever visible in source photos (privacy).
 
+## Performance / conversion (Oct 2026)
+Fleet cards use 800x600 pre-cropped thumbnails in `assets/images/thumbs/` (same filename as the
+full photo, lazy-loaded); the lightbox still uses the full-size originals. When adding a vehicle,
+generate its thumb too (PIL, center-crop to 4:3, 800px wide, q78). Every `.fleet-card` gets a
+per-vehicle "Reserve on WhatsApp" button injected by `addReserveButtons()` in `main.js`
+(message template: `CONFIG.vehicleMessage`). Head has OG tags, canonical and JSON-LD pointing at
+the github.io URL, so update them if a real domain is added.
+
 ## Design polish applied
 Gold accent underline on section titles, gold glow on hero logo, elevated hover states
 (shadow + lift) on service/fleet cards, gold ring on the floating WhatsApp button, hover
